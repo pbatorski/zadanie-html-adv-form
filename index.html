@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Formularz</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <h1>A Simple Form</h1>
+    <h2>Form Fundamentals</h2>
+    <form action="/action_page.php" method="get" autocomplete="on" class="upper-form">
+        <fieldset class="upper">
+            <legend>Customer info:</legend>
+            <label for="label-name">Name:</label>
+            <input type="text" name="input-name" placeholder="Enter your name" required>
+            <br>
+            <label for="phone">Telephone:</label>
+            <input type="tel" name="phone-number" placeholder="Pattern: 1-234-567-8910" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+            <br>
+            <label for="email">Email adress:</label>
+            <input type="email" name="input-name" placeholder="Enter your email adress" required>
+            <br>
+        </fieldset>
+        <fieldset class="lower">
+            <legend>Books</legend>
+            <select>
+                <option value="one"></option>
+                <option value="two">"Wojna i pokój"</option>
+                <option value="two">"Bracia Karamazow"</option>
+                <option value="two">"Don Kichot"</option>
+                <option value="two">"Lampart"</option>
+                <option value="two">"Zamek"</option>
+            </select>
+            Quantity (maximum 5):
+            <input type="number" min="1" max="5">
+        </fieldset>
+
+
+        <input type="submit" value="Submit">
+    </form>
+
+
+</body>
+
+</html>

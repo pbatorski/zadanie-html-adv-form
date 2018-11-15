@@ -1,0 +1,13 @@
+.upper,
+.lower {
+    width: 50%;
+    line-height: 2em;
+}
+
+.upper input {
+    width: 50%;
+}
+
+select {
+    width: 50%;
+}
